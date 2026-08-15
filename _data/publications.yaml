@@ -1,0 +1,19 @@
+# No publications yet. The block below is a filled-in sample kept for reference:
+# uncomment it and replace the values when the first paper lands.
+#
+# Fields: title, authors, venue are required. paper_pdf / project / code are
+# optional; omit the key entirely rather than leaving it blank.
+# `authors` and `venue` are rendered as raw HTML, so inline tags are allowed.
+# `paper_pdf` takes either an external URL or a repo path like /assets/papers/NAME.pdf.
+
+papers: []
+
+# papers:
+#
+#   - title: "Paper Title Goes Here"
+#     authors: "<u><b>Wonjun Song</b></u><sup>*</sup>, <a href='https://example.com'>Second Author</a><sup>*</sup>, and <a href='https://example.com'>Senior Author</a>"
+#     venue: "Conference Name (ABBR), 2026, <span style='color: red;'><b>Oral Presentation</b></span>"
+#     paper_pdf: "https://arxiv.org/abs/0000.00000"
+#     project: "https://wjwonjun.github.io/project-name/"
+#     code: "https://github.com/WJwonjun/project-name"
+#     selected: y

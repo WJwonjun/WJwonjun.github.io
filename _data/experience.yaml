@@ -1,0 +1,17 @@
+# Sample entries kept for reference. `category` is either "school" or "work".
+# `subtitle` is optional; omit the key rather than leaving it blank.
+
+experiences: []
+
+# experiences:
+#
+#   - place: "Organization Name"
+#     time: "Mon. YYYY - Mon. YYYY"
+#     title: "Role or Degree"
+#     subtitle: "Team or Group"
+#     category: "work"
+#
+#   - place: "University Name"
+#     time: "Mon. YYYY - Current"
+#     title: "B.S. in Field of Study"
+#     category: "school"

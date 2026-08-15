@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Wonjun Song</title>
+    <meta name="description" content="Homepage of Wonjun Song" />
+    <meta name="author" content="Wonjun Song" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="libs/external/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="libs/external/academicons-1.8.6/css/academicons.min.css"
+    />
+    <link rel="stylesheet" href="libs/custom/my_css.css" />
+
+    <!-- Restore the saved theme before first paint to avoid a light-mode flash. -->
+    <script>
+      if (localStorage.getItem("theme") === "dark") {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    </script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <!-- ===== Hero ===== -->
+        <section class="hero">
+          <div class="hero-header">
+            <div class="hero-info">
+              <h1>Wonjun Song</h1>
+              <p class="subtitle">jakeswj [at] kaist.ac.kr</p>
+            </div>
+            <div class="nav-sections">
+              <a href="#news">News</a>
+              <a href="#publications">Publications</a>
+              <a href="#education">Education</a>
+              <a href="#experience">Experience</a>
+              <button
+                class="theme-toggle"
+                id="theme-toggle"
+                aria-label="Toggle dark mode"
+              >
+                <i class="fa-solid fa-moon" id="theme-icon"></i>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== Intro ===== -->
+        <section class="intro-header">
+          <div class="intro-content">
+            <div class="intro-text">
+              <h2 class="greeting">Hi, I'm Wonjun!</h2>
+              <p class="intro-bio">
+                I am a M.S. student of
+                <a
+                  href="https://ina.kaist.ac.kr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >INA Lab</a
+                >, advised by
+                <a
+                  href="https://ina.kaist.ac.kr/team/dongsuh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Prof. Dongsu Han</a
+                >
+                at KAIST. I received my B.S. in CSE at Korea University in 2026.
+              </p>
+              <p class="intro-bio">
+                My research interests include
+                <strong>tensor program optimization</strong>, and
+                <strong>ML compiler</strong>.
+              </p>
+
+              <!-- Drop any <li> you do not need. -->
+              <ul class="intro-links">
+                <li>
+                  <a href="mailto:jakeswj@kaist.ac.kr"
+                    ><i class="fa-solid fa-envelope"></i> <span>Email</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="assets/CV_WonjunSong.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="ai ai-cv"></i> <span>CV</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/WJwonjun"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fa-brands fa-github"></i> <span>GitHub</span></a
+                  >
+                </li>
+                <!-- Placeholder slot: <a> without href is not a link. Add the
+                     href and drop class="disabled" once a profile exists. -->
+                <li class="disabled">
+                  <a aria-disabled="true"
+                    ><i class="ai ai-google-scholar"></i>
+                    <span>Scholar</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/wonjun-song-43239530a/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="intro-image">
+              <img src="main.jpg" alt="Wonjun Song" />
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== News ===== -->
+        <!-- One <tr> per item, newest first. -->
+        <section class="section-block" id="news">
+          <h2>News</h2>
+          <table class="news-table">
+            <tr>
+              <td class="news-date">Sep, 2026</td>
+              <td class="news-desc">🎉 I start my M.S. journey at KAIST AI.</td>
+            </tr>
+          </table>
+        </section>
+
+        <!-- ===== Publications ===== -->
+        <section class="section-block" id="publications">
+          <h2>Publications</h2>
+
+          <div class="publications-list">
+            <!--
+              TEMPLATE. Copy one <article> out of this comment per paper,
+              newest first. Nothing here renders while it stays commented out.
+
+              Thumbnail takes either form:
+                <img src="assets/figures/NAME.png" alt="NAME" loading="lazy" />
+                <video autoplay loop muted playsinline>
+                  <source src="assets/figures/NAME.mp4" type="video/mp4" />
+                </video>
+              Wrap your own name in <strong>. Mark equal contribution with *
+              and corresponding authors with <span>&dagger;</span>.
+              Drop <div class="pub-links"> entirely if nothing is public yet.
+              Note: HTML comments cannot contain a double hyphen, so keep en
+              dashes as &ndash; inside this block.
+
+            <article class="publication">
+              <div class="pub-content">
+                <div class="pub-thumbnail">
+                  <img
+                    src="assets/figures/example.png"
+                    alt="Example"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="pub-info">
+                  <h3 class="pub-title">Paper Title Goes Here</h3>
+                  <p class="pub-authors">
+                    <strong>Wonjun Song</strong>,
+                    <a href="https://example.com">Second Author</a>, and
+                    <a href="https://example.com">Senior Author</a
+                    ><span>&dagger;</span>
+                  </p>
+                  <p class="pub-venue">
+                    <strong>VENUE</strong> 2026 &bull;
+                    <span class="award">Oral</span>
+                  </p>
+                  <div class="pub-links">
+                    <a href="#" target="_blank" rel="noopener noreferrer">arXiv</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Website</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Code</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            -->
+          </div>
+        </section>
+
+        <!-- ===== Education ===== -->
+        <!-- One <div class="entry"> per school; repeat entry-detail for extra lines. -->
+        <section class="section-block" id="education">
+          <h2>Education</h2>
+
+          <div class="publications-list">
+            <div class="entry">
+              <div class="entry-header">
+                <h3 class="entry-title">
+                  Korea Advanced Institute of Science and Technology (KAIST)
+                </h3>
+                <span class="entry-date">Sep. 2026 – Current</span>
+              </div>
+              <p class="entry-detail">
+                M.S. student in Artificial Intelligence
+              </p>
+            </div>
+
+            <div class="entry">
+              <div class="entry-header">
+                <h3 class="entry-title">Korea University</h3>
+                <span class="entry-date">Mar. 2021 – Aug. 2026</span>
+              </div>
+              <p class="entry-detail">
+                B.S. in Computer Science &amp; Engineering
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== Experience ===== -->
+        <!-- Same entry structure as Education: title = role, detail = organization. -->
+        <section class="section-block" id="experience">
+          <h2>Experience</h2>
+
+          <div class="publications-list">
+            <div class="entry">
+              <div class="entry-header">
+                <h3 class="entry-title"></h3>
+                <span class="entry-date"><!-- Mon. YYYY – Mon. YYYY --></span>
+              </div>
+              <p class="entry-detail"></p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="libs/external/jquery-3.1.1.min.js"></script>
+    <script src="libs/custom/my_js.js"></script>
+    <script>
+      (function () {
+        var toggle = document.getElementById("theme-toggle");
+        var icon = document.getElementById("theme-icon");
+        if (localStorage.getItem("theme") === "dark") {
+          icon.className = "fa-solid fa-sun";
+        }
+        toggle.addEventListener("click", function () {
+          var isDark =
+            document.documentElement.getAttribute("data-theme") === "dark";
+          if (isDark) {
+            document.documentElement.removeAttribute("data-theme");
+            icon.className = "fa-solid fa-moon";
+            localStorage.setItem("theme", "light");
+          } else {
+            document.documentElement.setAttribute("data-theme", "dark");
+            icon.className = "fa-solid fa-sun";
+            localStorage.setItem("theme", "dark");
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
